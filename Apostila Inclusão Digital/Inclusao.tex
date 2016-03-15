@@ -14,6 +14,8 @@
 \usepackage[export]{adjustbox}
 \newcommand{\icon}[1]{\includegraphics[height=12pt]{#1}}
 
+\setcounter{secnumdepth}{4}
+
 \fancypagestyle{plain}{%
 	\fancyfoot{}%
 	\fancyhead{}%
@@ -28,6 +30,8 @@
 \pagestyle{fancy}
 	
 \tableofcontents
+\listoffigures
+
 {\let\thefootnote\relax\footnotetext{* \textit{COMPPET - UFU, Universidade Federal de Uberlândia, Minas Gerais, Brasil}}}
 
 {\let\thefootnote\relax\footnotetext{* \textit{PETMEC - UFU, Universidade Federal de Uberlândia, Minas Gerais, Brasil}}}
@@ -1078,33 +1082,274 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 		
 		\subsection{Conceitos Básicos da Internet}
 		
-		\textbf{Site}
-		
-		É uma coleção de páginas web, isto é, de documentos acessíveis através da web, na internet. Os sites da Internet, em geral, podem ter os seguintes propósitos:
-
-		\textbf{Institucional}: muitas empresas usam seus sites como ponto de contato entre uma instituição e seus clientes ou fornecedores. Instituições comerciais podem usar seus websites para comércio eletrônico ou até para recrutamento. 
-		
-		Ex.: http://www.ufu.br/ (Site da Faculdade de Engenharia Mecânica da UFU);
-		
-		
-		\textbf{Informações}: veículos de comunicação como jornais, revistas, agências de notícias ou mesmos jornalistas independentes utilizam a Internet para veicular notícias, por meio de seus sites. 
-		
-		Ex.: \url{http://www.joelmirbeting.com.br}/(blog do jornalista especialista em economia Joelmir Beting);
-		
-		
-		\textbf{Aplicações}: existem sites cujo conteúdo contém processadores de texto, planilhas eletrônicas, editores de imagem, softwares de correio eletrônico, agendas, etc. 
-		
-		Ex.: \url{http://docs.google.com} (exemplo de site que apresenta as ferramentas do desktop);
-		
-		
-		\textbf{Comunitário}: são os sites que servem para a comunicação de usuários com outros usuários da rede. Nesta categoria se encontram os chats, fóruns e sites de relacionamento. 
-		
-		Ex.: \url{http://www.facebook.com/} (site de relacionamentos);
-		
-		
-		\textbf{Portais}: são chamados de "portais" os sites que congregam conteúdos de diversos tipos entre os demais tipos, geralmente fornecidos por uma mesma empresa. Recebem esse nome por congregarem a grande maioria dos serviços da Internet num mesmo local. 
-		
-		Ex.: \url{http://g1.globo.com/} (portal de notícias da globo).
+			
+			 \subsubsection{Site}
+			
+			É uma coleção de páginas web, isto é, de documentos acessíveis através da web, na internet. Os sites da Internet, em geral, podem ter os seguintes propósitos:
+			
+			 \textbf{Institucional}: muitas empresas usam seus sites como ponto de contato entre uma instituição e seus clientes ou fornecedores. Instituições comerciais podem usar seus websites para comércio eletrônico ou até para recrutamento. 
+			
+			Ex.: http://www.ufu.br/ (Site da Faculdade de Engenharia Mecânica da UFU);\\
+			
+			
+			 \textbf{Informações}: veículos de comunicação como jornais, revistas, agências de notícias ou mesmos jornalistas independentes utilizam a Internet para veicular notícias, por meio de seus sites. 
+			
+			Ex.: \url{http://www.joelmirbeting.com.br}/(blog do jornalista especialista em economia Joelmir Beting);\\
+			
+			
+			 \textbf{Aplicações}: existem sites cujo conteúdo contém processadores de texto, planilhas eletrônicas, editores de imagem, softwares de correio eletrônico, agendas, etc. 
+			
+			Ex.: \url{http://docs.google.com} (exemplo de site que apresenta as ferramentas do desktop);\\
+			
+			
+			 \textbf{Comunitário}: são os sites que servem para a comunicação de usuários com outros usuários da rede. Nesta categoria se encontram os chats, fóruns e sites de relacionamento. 
+			
+			Ex.: \url{http://www.facebook.com/};\\
+			
+			
+			\textbf{Portais}: são chamados de "portais" os sites que congregam conteúdos de diversos tipos entre os demais tipos, geralmente fornecidos por uma mesma empresa. Recebem esse nome por congregarem a grande maioria dos serviços da Internet num mesmo local. 
+			
+			Ex.: \url{http://g1.globo.com/}.\\
+			
+			
+			\subsubsection{Domínio}
+			
+			Todo site tem no final de seu endereço uma palavra que definimos como domínio. O domínio serve, para identificar a natureza dos sites. Por exemplo, o site do Banco do Brasil http://www.bb.com.br tem o domínio COM. Já o site http://www.sosmatatlantica.org.br tem o domínio ORG. Os principais domínios são: \textbf{.com / .gov / .edu / .mil / .org}\\
+			
+			 \textbf{URL ou Endereço Eletrônico}
+			
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.5]{Figures/site}
+				\label{fig:site}
+				\caption{Representação de um site}
+			\end{figure}
+			
+			\begin{enumerate}
+				\item A expressão WWW representa a expressão do inglês world wide web que em português quer dizer rede mundial de computadores;
 				
+				\item Nome do site;
+				
+				\item Domínio;
+				
+				\item Localização do site. O BR significa que o site é brasileiro.
+				
+			\end{enumerate}
+		
+		\subsubsection{Links}
+			Texto colorido e sublinhado ou uma figura em que o internauta clica para ir à uma página da internet. O usuário nunca deve acessar links que não conheça, uma vez que, estes links podem instalar programas maliciosos no computador.
+			
+			Se você estiver acessando a apostila pelo computador, clique neste texto(ele é um link que te levará para um site).\\
+			\textbf{Link}: \url{www.google.com.br}	
+			
+		\subsubsection{Browser ou Navegador}
+		Programa que permite aos usuários da internet consultar páginas e navegar. Existem vários navegadores no mercado, dentre eles podemos citar:
+			\begin{itemize}
+				\item \textbf{Internet Explorer} : Desenvolvido pela Microsoft. Sua última versão apresentou vários problemas de segurança, por isso recomenda-se a utilização do Firefox ou do Chrome;
+				\item \textbf{Microsoft Edge} : Também desenvolvido pela Microsoft, seu uso é similar ao do Explorer. Esse navegador ja vem instalado em sistemas mais recentes da Microsoft;
+				\item \textbf{Mozilla Firefox} : Seu uso é similar ao do Explorer;
+				\item \textbf{Opera} : Seu uso é similar ao do Explorer;
+				\item \textbf{Google Chrome} : navegador desenvolvido pela Google. É o mais seguro e eficiente.
+			\end{itemize}
+			\textbf{OBS}.: Não se recomenda o uso do Internet Explorer.
+		
+		\section{Conhecendo o Google Chrome}
+			\subsection{Tela Principal}
+			A tela principal do Google Chrome pode ser divida basicamente em três partes: área de digitar o site, área de exibição do conteúdo e área de indicadores.
+		
+			\subsection{Menus}
+			
+			\begin{enumerate}
+				\item \textbf{Abrindo uma nova guia} :
+				\item \textbf{Favoritos} :
+				\item \textbf{Imprimir} :
+				\item \textbf{Barra de Endereços} :
+			\end{enumerate}
+			
+			\subsection{Chega de propaganda !}
+			
+			Muita gente reclama da alta quantidade de janelas que abrem de repente quando estamos mexendo no computador. Esses anúncios quase sempre tem conteúdo indesejado para nós. Uma maneira simples de nos livrarmos disso é instalando um add-on (aplicativo para o navegador) do chrome. Faça o seguinte:
+			
+			\begin{enumerate}
+				\item Pesquise por \textbf{Chrome Web Store} e clique no primeiro link;
+				
+				\begin{figure}[!h]
+					\centering
+					\includegraphics[scale=0.4]{Figures/chrome1}
+					\label{fig:chrome1}
+					\caption{Pesquisa}
+				\end{figure}
+				
+				\item No site, pesquise por Adblock e, na parte de extensões, clique em usar no chrome.
+				
+				\begin{figure}[!h]
+					\centering
+					\includegraphics[scale=0.4]{Figures/chrome2}
+					\label{fig:chrome2}
+					\caption{Pesquisa}
+				\end{figure}
+			
+			\end{enumerate}
+			
+			Após instalar o adblock, um ícone, na parte superior direita, será fixado no seu navegador. Veja a diferença do mesmo site com, e sem o adblock.
+
+			\begin{figure}[!htbp]
+				\centering
+				\begin{minipage}[b]{0.5\textwidth}
+					\includegraphics[width=\textwidth]{Figures/adblock1}\\
+					
+				\end{minipage}
+				\hfill
+				\begin{minipage}[b]{0.5\textwidth}
+					\includegraphics[width=\textwidth]{Figures/adblock2}
+					
+				\end{minipage}
+			\end{figure}
+
+			
+			\newpage
+		\subsection{Email no Gmail!}
+			 O e-mail é um recurso da internet que permite aos usuários receber e enviar mensagens e textos. Por meio dele, mensagens podem ser enviadas para qualquer parte do mundo, possibilitando trocas de informações de forma rápida e extremamente eficiente. 
+
+			Um e-mail é composto por um Login, o símbolo de arroba (@) e pelo provedor de e-mail. O login é algo que identifica o dono do e-mail. Pode ser um nome de uma pessoa ou um apelido. O provedor do e-mail indica em qual site ele foi cadastrado. Exemplo:\\
+			
+			\hspace{3.7cm}\textbf{\large{fulano@gmail.com.br}}\\
+			
+			Nesse caso o login é fulano e o provedor é Gmail.
+		
+		\subsubsection{Criando uma conta do e-mail no Gmail}
+		
+		\begin{enumerate}
+			\item  Acesse um site de algum provedor de e-mail. No nosso caso abriremos uma conta no Gmail! (\url{www.gmail.com}).
+			\item Clique em criar uma conta (na parte superior do site):
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.4]{Figures/gmail1}
+				\label{fig:gmail1}
+				\caption{Criando Conta}
+			\end{figure}
+		\newpage
+		\item  Preencha o formulário de cadastro com seus dados pessoais, login e senha:
+		\newpage
+		
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.2]{Figures/gmail3}
+			\label{fig:gmail3}
+			\caption{Cadastrando}
+		\end{figure}
+		
+		
+		
+		\end{enumerate}
+		
+		
+		
+		Após entrar no e-mail, você obterá uma página semelhante a essa:
+		
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.3]{Figures/gmail2}
+			\label{fig:gmail2}
+			\caption{Gmail}
+		\end{figure}
+		
+		Pela figura, podemos observar que a página principal do e-mail possui algumas pastas. Um e-mail geralmente possui 5 pastas principais:
+		
+		\begin{itemize}
+			\item \textbf{Entrada} – e-mails que você recebeu;
+			
+			\item \textbf{Rascunho} – mensagens que você escreveu, mas não enviou ainda;
+			
+			\item \textbf{Enviadas} – mensagens que você escreveu e enviou; 
+			
+			\item \textbf{Spam} –é o termo pelo qual é comumente conhecido o envio, a uma grande quantidade de pessoas de uma vez, de mensagens eletrônicas, geralmente com cunho publicitário, mas não exclusivamente;
+			
+			\item \textbf{Lixeira} – mensagens que você recebeu e apagou.
+			
+			\item \textbf{Botão “1”} – Escrever um novo e-mail
+			
+			\item \textbf{Parte “2”} – Caixa de entrada do e-mail, onde fica armazenado suas conversas.
+			
+			\item \textbf{Parte “3”} – Bate-papo do gmail, é possivel conversar com seus contatos quando eles estão online
+			
+			\item \textbf{Parte “4”} – Opções do seu e-mail.
+			
+		\end{itemize}
+		
+		
+		\subsubsection{Lendo e-mails}
+		
+		Para ver algum e-mail que você tenha recebido, devemos acessar a pasta \textbf{Entrada}, que possui os e-mails recebidos. Após isso, a página irá exibir uma lista de e-mails. Ao clicarmos em qualquer mensagem, o e-mail é aberto para leitura: 
+		
+		Segue o exemplo de um email:
+		
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.3]{Figures/gmail5}
+			\label{fig:gmail5}
+			\caption{Leitura de email}
+		\end{figure}
+		
+		O e-mail é composto pelos campos:
+		
+		\begin{enumerate}
+			\item \textbf{De} : Quem enviou o e-mail.
+
+			\item Conteúdo : Conteúdo do e-mail.
+			
+			\item \textbf{Opções} : Opções para responder o e-mail ou encaminhar para outra pessoa.	
+		\end{enumerate}
+		
+		\subsubsection{Escrevendo e-mails}
+		
+		\begin{enumerate}
+			\item Clique no botão \textbf{Escrever}(Não sabe onde está o botão? Observe na imagem \ref{fig:gmail2});
+			\item Entre com os dados para envio. Abaixo uma imagem de um formulário de envio de e-mail.
+			
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.3]{Figures/gmail6}
+				\label{fig:gmail6}
+				\caption{Envio de email}
+			\end{figure}
+						
+		\end{enumerate}
+		Após preencher os campos, basta clicar no botão \textbf{Enviar}
+		
+		\subsubsection{Saindo do e-mail}
+		
+		Quando acessar seu e-mail, não se esqueça de sair dele.
+		
+		\begin{enumerate}
+			\item Clique no botão 4 da imagem \ref{fig:gmail2};
+			
+			\item Clique na opção sair.
+			
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.3]{Figures/gmail7}
+				\label{fig:gmail7}
+				\caption{Sair do Gmail}
+			\end{figure}
+			
+		\end{enumerate}
 	
+	\section{Segurança na internet}
+	
+	Pouca gente sabe, mas quando você disca para seu provedor de acesso você na verdade está se tornando um nó da Internet. Como nó da Internet, seja seu computador um provedor de serviços ou apenas mais uma máquina para "surfar na Web", ela está conectada a um grande meio de comunicação que permite à informação transitar em ambas as direções. Assim como você pode transmitir dados, alguém pode recuperar ou acessar dados do seu computador. 
+
+	As ameaças mais comuns são os vírus e trojans. Vírus são programas de computador que se instalam quando requisitados pelo usuário. Eles podem ser inofensivos quando somente se multiplicam e utilizam a sua máquina pra enviar suas cópias para outros computadores, tornando a internet lenta. Mas também podem ser extremamente perigosos quando apagam arquivos cruciais do Windows, por exemplo. Os trojans são programas que se instalam sem a permissão do usuário, e tem a única função de enviar dados do seu computador para um site específico. Com tais informações, um usuário mal-intencionado pode calcular invasões ou enviar e-mails não solicitados (spams).
+	
+	Uma alternativa para diminuir esse risco seria instalar programas anti-virus no seu computador. Alguns anti-virus gratuitos conhecidos são Avast, AVG , Avira. Exitem alguns pagos também como as versões completas dos programas citados a cima alem de outros como Kaspersky e ESET-NOD32. Convém instalar qualquer um desses programas no seu computador pessoal.
+	
+	
+	\section{Sugestões de sites interessantes}
+		A internet nos da o acesso a diversos sites interessantes como:\\
+
+		\url{www.youtube.com.br} – Site de vídeos postados por internautas. Ele possui quase todo o tipo de conteúdo, desde palestras pro grandes profissionais até receitas de bolo ;\\
+
+		\url{https://www.spotify.com/br/} - Site de músicas. Você pode escutar qualquer música nesse site. Existe o aplicativo disponível para download no Windows. Além disso, o Spotify oferece uma versão paga, sem publicidade e com mais recursos;\\
+		
+		\url{https://www.netflix.com/br/} [PAGO] - Site de filmes. Apesar de ter uma mensalidade, o Netflix dispõe de um imenso acervo filmes e séries(todos legendados). Quer testar o serviço ? Atualmente, eles estão dando um mês de graça !
 \end{document}
