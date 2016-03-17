@@ -13,22 +13,52 @@
 \usepackage{fancyhdr}
 \usepackage[export]{adjustbox}
 \newcommand{\icon}[1]{\includegraphics[height=12pt]{#1}}
+\newcommand{\bigicon}[1]{\includegraphics[height=50pt]{#1}}
 
+\newcommand{\iconb}[1]{\includegraphics[height=20pt]{#1}}
 \setcounter{secnumdepth}{4}
 
 \fancypagestyle{plain}{%
 	\fancyfoot{}%
 	\fancyhead{}%
 }
-\fancyhead{}
+
+
+\begin{document}
+\pagenumbering{gobble}
+\pagestyle{fancy}
+
+
+\begin{center}
+	\vspace*{2cm}{\textbf{\Huge Curso de Inclusão Digital}}\\
+	\vspace{0.5cm}\large{Projeto de extensão}
+\end{center}
+
+\lhead{\bigicon{Figures/ufu}}
+\chead{{\footnotesize UNIVERSIDADE FEDERAL DE UBERLÂNDIA \\ FACULDADE DE CIÊNCIA DA COMPUTAÇÃO \\ COMPPET - PROGRAMA DE EDUCAÇÃO TUTORIAL} \\ \scriptsize{Av. João Naves de Ávila 2121, Campus Santa Mônica} }
+\rhead{\bigicon{Figures/facom}}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\vspace{1cm}
+\begin{figure}[!h]
+	\centering	
+	\includegraphics[scale=0.9]{Figures/capa}
+
+\end{figure}
+
+
+\newpage
+\fancyhead[C]{}
+\fancyhead[R]{\iconb{Figures/comppet}}
 \fancyhead[L]{\leftmark}
 \fancyfoot{}
 \fancyfoot[L]{{\footnotesize  COMPPET - Programa de Educação Tutorial}}
 \fancyfoot[C]{\hspace{3.0cm}\thepage}
 \fancyfoot[R]{{\footnotesize Curso de Inclusão Digital}}
-\begin{document}
-\pagestyle{fancy}
-	
+\pagenumbering{arabic}
+
+
 \tableofcontents
 \listoffigures
 
@@ -36,27 +66,29 @@
 
 {\let\thefootnote\relax\footnotetext{* \textit{PETMEC - UFU, Universidade Federal de Uberlândia, Minas Gerais, Brasil}}}
 
+
+{\let\thefootnote\relax\footnotetext{* \textit{PETCIVIL - UFU, Universidade Federal de Uberlândia, Minas Gerais, Brasil}}}
+
+
 \newpage
 
 \section{Introdução}
-\paragraph{} Este material foi desenvolvido por alunos do PET-Computação, PET-Eng. Civil, PET-Eng. Mecânica da UFU - Universidade Federal de Uberlândia e visa prioritariamente ajudar aqueles que tiveram pouco/nenhum contato com o computador e o nicho o qual ele
-			está inserido. Nos primeiros capítulos você aprenderá tarefas simples, como ligar e desligar o computador,utilizar o sistema operacional (Windows 7), depois mostraremos o tão famoso editor de texto Word, por fim um capitulo dedicado inteiramente à Internet, o que é, e como usá-la.
-\paragraph{} Ao final do curso você será capaz de entender como um computador funciona e como usá-lo, contudo o mais importante
-			é aprender a como buscar o que você deseja, pois mesmo se este curso durasse 6 meses não seriamos capazes 
-			de ensinar tudo que é possível de se realizar com um computador, espero que goste e qualquer sugestão é sempre bem vinda.\textbf{Enfim chega de papo e vamos ao que realmente interessa!!!}
+ Este material foi desenvolvido por alunos do PET-Computação, PET-Eng. Civil, PET-Eng. Mecânica da UFU - Universidade Federal de Uberlândia e visa prioritariamente ajudar aqueles que tiveram pouco ou nenhum contato com o computador e o nicho o qual ele está inserido. Nos primeiros capítulos você aprenderá tarefas simples, como ligar e desligar o computador,utilizar o sistema operacional (Windows 7), utilizar qualquer editor de texto e, por fim, um capitulo dedicado inteiramente à Internet, o que é, e como usá-la.
+
+ Ao final do curso você será capaz de entender como um computador funciona e como usá-lo, contudo o mais importante	 é aprender a como buscar o que você deseja, pois mesmo se este curso durasse 6 meses não seriamos capazes de ensinar tudo que é possível de se realizar com um computador, espero que goste e qualquer sugestão é sempre bem vinda. \textbf{Enfim chega de papo e vamos ao que realmente interessa!!!}
 
 \section{Ligando e Desligando o Computador}
 \subsection{Ligando o Computador} 
 
-\paragraph{} Para ligar o computador, devemos seguir os seguintes passos: \\
+	Para ligar o computador, devemos seguir os seguintes passos: 
 \begin{itemize}
 	
 	\item Verificar os cabos de energia do computador;
 	
 	\item Verificar se a voltagem está correta (110 volts ou 220 volts);
 	
-	\item Verificar se existe um estabilizador \href{Fig:estabilizador} de voltagem, e se existir, verificar a voltagem da 
-	dele (110 v ou 220 v). Essa voltagem deve ser compatível com a voltagem utilizada na sua casa, ou no trabalho;
+	\item Verificar se existe um estabilizador de voltagem, e se existir, verificar a voltagem dele (110 v ou 220 v). Essa voltagem deve ser compatível com a voltagem utilizada no local onde você irá ligar o aparelho;
+	\textbf{OBS}.: notebooks modernos geralmente acompanham uma bateria bivolt. Dessa forma pode-se ligá-los em qualquer lugar, sem preocupação. 
 	
 	\item Quando todos os cabos estiverem conectados, ligar o estabilizador. Ele possui um botão Liga/Desliga de acesso e identificação simples;
 
@@ -70,9 +102,9 @@
 \end{itemize}
 
 \subsection{Desligando o Computador}
-\paragraph{} O procedimento de desligar o computador é muito importante para preservar o equipamento e as informações armazenadas nele, portanto, é importantíssimo acostumar-se a seguir o procedimento de desligar:\\
+O procedimento de desligar o computador é muito importante para preservar o equipamento e as informações armazenadas nele, portanto, é importantíssimo acostumar-se a seguir o procedimento de desligar:
 
-\begin{itemize}
+\begin{enumerate}
 	\item Clicar no botão Iniciar;
 	
 	\item Clicar na opção Desligar; 
@@ -80,11 +112,11 @@
 	\item Esperar o computador desligar automaticamente; 
 	
 	\item Desligar o estabilizador através do botão Liga/Desliga do estabilizador.
-\end{itemize}
+\end{enumerate}
 
-\begin{figure}[!hb]
+\begin{figure}[!h]
 	\centering	
-	\includegraphics{Figures/desligando.png}
+	\includegraphics[scale=0.9]{Figures/desligando.png}
 	\caption{Desligando o Computador}
 	\label{fig:desligando}
 \end{figure}
@@ -96,7 +128,7 @@
 
 O Windows é o sistema operacional criado pela Microsoft Corporation® que tem como principal característica o uso de janelas para facilitar a utilização dos diversos aplicativos existentes no sistema. Antes do conceito de janelas, os sistemas operacionais eram utilizados em modo de texto. Ainda existem sistemas que se utilizam desse recurso, como é o caso de algumas versões do Linux.
 
-No meio computacional, uma área de trabalho consiste de um ambiente gráfico adequado às necessidades de cada usuário. A área de trabalho permite a colocação de ícones dos programas mais utilizados, facilitando a vida do usuário.\\
+No meio computacional, uma área de trabalho consiste em um ambiente gráfico adequado às necessidades de cada usuário. A área de trabalho permite a colocação de ícones dos programas mais utilizados, facilitando a vida do usuário.\\
 
 \begin{figure}[!hb]
 	\centering
@@ -116,7 +148,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 	 
 	 \hspace{3.6cm}Tipo de item
 	 
-	 \hspace{3.6cm}Data de modificação.
+	 \hspace{3.6cm}Data de modificação.\\
 	
 	 Existe uma outra opção chamada Exibir. Clicando nela com o botão esquerdo do mouse você pode Organizar ícones automaticamente. Uma outra opção é soltar o ícone em qualquer parte da área de trabalho.
 	
@@ -129,7 +161,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 			\label{fig:classificar por}
 		\end{minipage}
 		\hfill
-		\begin{minipage}[b]{0.45\textwidth}
+		\begin{minipage}[b]{0.53\textwidth}
 			\includegraphics[width=\textwidth]{Figures/icone2}
 			\caption{Exibir}
 			\label{fig:exibir}
@@ -143,38 +175,30 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 	É subdividida em:
 	
 \begin{itemize}
-	\item Menu Iniciar – nele estão organizados todos os programas do computador para um acesso imediato;
+	\item \textbf{Menu Iniciar} : nele estão organizados todos os programas do computador para um acesso imediato;
 
-	\item Barra de Inicialização Rápida – podem ser colocados nesta área os programas mais utilizados pelo usuário;
+	\item \textbf{Barra de Inicialização Rápida} : podem ser colocados nesta área os programas mais utilizados pelo usuário;
 
-	\item Janela Ativa ou Inativa – nesta área aparecem todas as janelas que estão ativas ou inativas (os programas que estão em execução são mostrados);
+	\item \textbf{Janela Ativa ou Inativa} : nesta área aparecem todas as janelas que estão ativas ou inativas (os programas que estão em execução são mostrados);
 
-	\item Área de Notificação – os programas que estão sendo controlados pelo sistema aparecem nesta área, inclusive o relógio.
+	\item \textbf{Área de Notificação} os programas que estão sendo controlados pelo sistema aparecem nesta área, inclusive o relógio.
 	
 \end{itemize}
 	
-		\begin{figure}[!hb]
-			%\centering
-			\includegraphics[width=1\textwidth,left]{Figures/menuiniciar}
-			\label{fig:menu iniciar}
-		
-		\end{figure}	
-	  {\vspace{-0.8cm}\hspace{-0.6cm}\huge{$\Downarrow$}}     {\vspace{-0.8cm}\hspace{3.6cm}\huge{$\Downarrow$}}
-	  {\vspace{-0.8cm}\hspace{7.6cm}\huge{$\Downarrow$}}\\
-	  \bigskip
-	  
-	  \vspace{1cm}
-	  \hspace{-0.6cm}{\small Iniciar } \hspace{1cm}{\tiny Barra de Inicialização Rápida e Janelas Ativas e Inativas}
-	  \hspace{1.2cm}{\small Área de Notificação}
-	  \newpage
-  
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.5]{Figures/menu_windows}
+			\label{fig:menu_windows}
+			
+		\end{figure}
+  \newpage
   \subsection{Relógio/Calendário}
 	
-	O relógio está localizado na extrema direita da barra de tarefas. Para fazer a visualização da data, basta clicar em cima da hora. Para fazer correção de hora e/ou data, basta clicar em {\bf Alterar configurações de data e hora}. 
+	O relógio está localizado na direita inferior da barra de tarefas. Para fazer a visualização da data, basta clicar em cima da hora. Para fazer correção de hora e/ou data, basta clicar em {\bf Alterar configurações de data e hora}. 
 	
 	\begin{figure}[!hb]
 		\centering
-		\includegraphics[scale=0.9]{Figures/relogio}
+		\includegraphics[scale=0.6]{Figures/relogio}
 		\caption{Relógio do Windows 7}
 		\label{fig:relogio}
 		
@@ -184,7 +208,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 	
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[scale=0.9]{Figures/relogio2}
+		\includegraphics[scale=0.6]{Figures/relogio2}
 		\caption{Calendário do Windows 7}
 		\label{fig:calendario}
 		
@@ -193,43 +217,45 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 	\newpage
 	\subsection{Menu Iniciar}
 	
-	Através do menu Iniciar podemos acessar os diversos recursos disponíveis em nosso computador. Nele estão contidos todos os programas instalados no computador, diversas ferramentas de manutenção do sistema e ferramentas úteis como a calculadora, bloco de notas e o Google Chrome \footnote{O naveggador padrão é o Internet Explorer, no entanto, o Chrome apresenta melhor desempenho.} que é o programa de navegação na internet . Ao se clicar neste, abrirá no computador uma janela semelhante a da figura abaixo:
+	Por meio do \textbf{Menu Iniciar} podemos acessar os diversos recursos disponíveis em nosso computador. Nele estão contidos todos os programas instalados, diversas ferramentas de manutenção do sistema e ferramentas úteis como a calculadora, bloco de notas e o Google Chrome \footnote{O naveggador padrão é o Internet Explorer, no entanto, o Chrome apresenta melhor desempenho.} que é o programa de navegação na internet . Ao se clicar neste, abrirá no computador uma janela semelhante a da figura abaixo:
 	
 	
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[scale=0.9]{Figures/iniciar}
+		\includegraphics[scale=0.7]{Figures/iniciar}
 		\caption{Iniciar}
 		\label{fig:iniciar}
 		
 	\end{figure}
 	\newpage
+	
+	Na coluna da esquerda, fica a lista dos programas usados mais recentemente.
+	
 	\begin{itemize}
-	\item Na coluna da esquerda, fica a lista dos programas usados mais recentemente.
-
-	\item Todos os programas – Nele você encontra os ícones de todos os programas instalados assim como as ferramentas de administração do sistema.
+	 
+	\item \textbf{Todos os programas} : Nele você encontra os ícones de todos os programas instalados assim como as ferramentas de administração do sistema;
 	
-	\item Documentos – Aqui podem ser guardados todos os documentos produzidos no computador.
+	\item \textbf{Documentos} : Aqui podem ser guardados todos os documentos produzidos no computador;
 	
-	\item Imagens – É uma pasta para armazenagem de imagens.
+	\item \textbf{Imagens} : É uma pasta para armazenagem de imagens;
 	
-	\item Músicas – É uma pasta que contém ou podem ser armazenados diversos formatos de áudio.
+	\item \textbf{Músicas} : É uma pasta que contém ou podem ser armazenados diversos formatos de áudio;
 	
-	\item Jogos – Aqui encontra-se todos os jogos disponíveis do computador.
+	\item \textbf{Jogos} : Aqui encontra-se todos os jogos disponíveis do computador;
 	
-	\item Computador – Aqui você pode ter acesso às pastas do sistema operacional.
+	\item \textbf{Computador} : Aqui você pode ter acesso às pastas do sistema operacional;
 	
-	\item Painel de Controle – Contém opções de configuração do computador.
+	\item \textbf{Painel de Controle} : Contém opções de configuração do computador;
 	
-	\item Dispositivos e Impressoras – Aqui se encontram as impressoras e aparelhos de fax instalados no computador.
+	\item \textbf{Dispositivos e Impressoras} : Aqui se encontram as impressoras e aparelhos de fax instalados no computador;
 	
-	\item Programas Padrão – Aqui pode-se definir os programas que o Windows usa por padrão.
+	\item \textbf{Programas Padrão} : Aqui pode-se definir os programas que o Windows usa por padrão;
 	
-	\item Ajuda e suporte – Tire suas dúvidas e encontre soluções para diversos problemas que possam aparecer no sistema operacional.
+	\item \textbf{Ajuda e suporte} : Tire suas dúvidas e encontre soluções para diversos problemas que possam aparecer no sistema operacional;
 	
-	\item Pesquisar Programas e Arquivos – Localizar imagens, pastas e arquivos.
+	\item \textbf{Pesquisar Programas e Arquivos} : Localizar imagens, pastas e arquivos;
 	
-	\item Desligar – Opções: Trocar usuário, Fazer logoff, Bloquear, Reiniciar, Suspender e Hibernar.
+	\item \textbf{Desligar} $\rightarrow$ Opções: Trocar usuário, Fazer logoff, Bloquear, Reiniciar, Suspender e Hibernar.
 	\end{itemize}
 	
 	\section{Interface}	
@@ -255,43 +281,23 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 	
 	\section{Botões}
 	
+
+	\noindent \icon{Figures/minimizar}{\bf Botão Minimizar}: reduz ou minimiza uma janela a um botão da barra de tarefas do Windows (seu programa se torna um ícone da barra de tarefas).
 	
-	\begin{figure}[!h]
-			\includegraphics[scale=0.5]{Figures/minimizar}
-			\label{fig:min }
-	\end{figure}
+	\noindent\icon{Figures/maximizar}{\bf Botão Maximizar}: aumenta ou maximiza uma janela (deixa a janela do tamanho da tela do computador).
 	
-	\vspace{-1cm}{\bf Botão Minimizar}: reduz ou minimiza uma janela a um botão da barra de tarefas do Windows (seu programa se torna um ícone da barra de tarefas).
-	
-	\begin{figure}[!h]
-		\includegraphics[scale=0.5]{Figures/maximizar}
-		\label{fig:max}
-	\end{figure}
-	
-	\vspace{-1cm}{\bf Botão Maximizar}: aumenta ou maximiza uma janela (deixa a janela do tamanho da tela do computador).
-	
-	\begin{figure}[!h]
-		\includegraphics[scale=0.5]{Figures/restaurar}
-		\label{fig:restaurar}
-	\end{figure}
-	
-	\vspace{-1cm}{\bf Botão Restaurar}: restaura uma janela para o seu tamanho ou posição anterior.
-	
-	\begin{figure}[!h]
-		\includegraphics[scale=0.5]{Figures/fechar}
-		\label{fig:fechar}
-	\end{figure}
-	
-	\vspace{-1cm}{\bf Botão Fechar}: fecha um programa ou janela ativa. Caso um arquivo aberto não tenha sido salvo ou contenha alterações não salvas, você será solicitado a salvar ou não o arquivo antes de fechá-lo.
+	\noindent\icon{Figures/restaurar}{\bf Botão Restaurar}: restaura uma janela para o seu tamanho ou posição anterior.
+
+	\noindent\icon{Figures/fechar}{\bf Botão Fechar}: fecha um programa ou janela ativa. Caso um arquivo aberto não tenha sido salvo ou contenha alterações não salvas, você será solicitado a salvar ou não o arquivo antes de fechá-lo.
 	
 	
 	\section{Movendo uma Janela}
 	
-	Para mover uma janela, leve o ponteiro do mouse até a barra de títulos. 	Segure o botão esquerdo do mouse e arraste a janela até a posição desejada.
+	Para mover uma janela, leve o ponteiro do mouse até a barra de títulos. Segure o botão esquerdo do mouse e arraste a janela até a posição desejada.
 	
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[scale=0.6]{Figures/mov_janela}
+		\includegraphics[scale=0.5]{Figures/mov_janela}
 		\caption{Ilustração da localização da barra de título}
 		\label{fig:movendo janela}
 		
@@ -299,22 +305,22 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 	
 	\section{Pastas e Arquivos}
 	
-	É importante que mantenhamos os aplicativos e pastas de trabalho organizados. Em qualquer ambiente de trabalho, organização é fundamental para uma boa produtividade. Também é assim em um sistema operacional. O Windows já vem organizado de forma a facilitar essas rotinas. Contudo, nada impede que organizemos esse ambiente de acordo com nossas necessidades. Não se deve mexer, porém, nas pastas do sistema operacional, sob o risco de danificá-lo.
+	É importante mantermos os aplicativos e pastas de trabalho organizados. Em qualquer ambiente de trabalho, organização é fundamental para uma boa produtividade. Também é assim em um sistema operacional. O Windows já vem organizado de forma a facilitar essas rotinas. Contudo, nada impede que organizemos esse ambiente de acordo com nossas necessidades. Não se deve mexer, porém, nas pastas do sistema operacional, sob o risco de danificá-lo.
 
-	A organização das pastas e arquivos pode ser observada através do Windows Explorer (ou Explorador). Como veremos mais adiante.
-	
+	A organização das pastas e arquivos pode ser observada através do Windows Explorer. Como veremos mais adiante.
+	\newpage
 	\subsection{Criando uma pasta na área de trabalho}
 	
 	\begin{itemize}
-		\item Em uma área vazia do desktop clique no botão direito do mouse. Escolha a opção{\bf Novo>Pasta}.
-		\item Nomeie a pasta.
-		\item Para abri-la, dê um clique duplo no botão esquerdo do mouse
+		\item Em uma área vazia do desktop clique no botão direito do mouse. Escolha a opção: {\bf Novo   $\rightarrow $ Pasta};
+		\item Nomeie a pasta;
+		\item Para abri-la, dê um clique duplo no botão esquerdo do mouse;
 		\item Podemos criar uma subpasta dentro da pasta principal utilizando o mesmo processo.
 	\end{itemize}
 	
 		\begin{figure}[!h]
 			\centering
-			\includegraphics[scale=0.6]{Figures/cria_pasta}
+			\includegraphics[scale=0.5]{Figures/cria_pasta}
 			\caption{Criando pasta}
 			\label{fig:criando pasta}
 		\end{figure}
@@ -323,7 +329,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 	
 		O Windows Explorer é uma ferramenta que auxilia na organização dos arquivos e pastas do disco rígido (HD).	
 		
-		Para acioná-lo, desça com a seta até o{\bf Menu iniciar>Todos os programas> Acessórios>Windows Explorer}.
+		Para acioná-lo, desça com a seta até o {\bf Menu iniciar $\rightarrow$ Todos os programas $\rightarrow$ Acessórios $\rightarrow$ Windows Explorer}.
 	
 		\begin{figure}[!h]
 			\centering
@@ -332,26 +338,26 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 			\label{fig:explorer}
 		\end{figure}
 		
-			
-			\begin{figure}[!h]
-				\centering
-				\includegraphics[scale=0.5]{Figures/explorer_pasta}
-				\caption{Windows Explorer}
-				\label{fig:explorer_p}
-			\end{figure}
+		
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.5]{Figures/explorer_pasta}
+			\caption{Windows Explorer}
+			\label{fig:explorer_p}
+		\end{figure}
 			
 		\newpage	
 		\subsection{Criando pastas no Windows Explorer}
 		
 		\begin{itemize}
 			\item Selecionar o ícone {\bf(D:)}: clicando uma vez sobre ele com o botão esquerdo do mouse.
-			\item Clique sobre uma área vazia com o botão direito do mouse. Escolha a opção{\bf Novo$>$Pasta}.
+			\item Clique sobre uma área vazia com o botão direito do mouse. Escolha a opção{\bf Novo $\rightarrow$ Pasta}.
 			\item Digite o nome da pasta e tecle o botão {\bf Enter}.
 		\end{itemize}
 		
 		\begin{figure}[!h]
 			\centering
-			\includegraphics[scale=0.6]{Figures/passo1}
+			\includegraphics[scale=0.5]{Figures/passo1}
 			\caption{Passo 1}
 			\label{fig:passo1}
 		\end{figure}
@@ -359,7 +365,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 		
 		\begin{figure}[!h]
 			\centering
-			\includegraphics[scale=0.6]{Figures/passo2}
+			\includegraphics[scale=0.5]{Figures/passo2}
 			\caption{Passo 2}
 			\label{fig:passo2}
 		\end{figure}
@@ -370,7 +376,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 		\begin{itemize}
 			
 			\item Selecionar o item a ser copiado clicando uma vez em cima do ícone com o botão esquerdo do mouse.
-			\item Acionar o {\bf Copiar} (ou atalho {\bf Ctrl + C} - você aperta a tecla Ctrl do teclado e enquanto ela está acionada, aperta a letra {\bf C}, soltando ambas ao mesmo tempo).
+			\item Acionar o {\bf Copiar} (ou atalho {\bf Ctrl + C} - você aperta a tecla \textbf{Ctrl} do teclado e enquanto ela está acionada, aperta a letra {\bf C}, soltando ambas ao mesmo tempo).
 			\item Selecionar a pasta que irá receber a cópia, clicar com o botão direito em cima do ícone.
 			\item E clique na opção {\bf Colar}. Ou então podemos entrar na pasta e utilizar o comando ({\bf Ctrl + V} - você aperta a tecla {\bf Ctrl} do teclado e enquanto ela está acionada, aperta a letra {\bf V}, soltando ambas ao mesmo tempo)
 		\end{itemize}
@@ -387,7 +393,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 		\subsection{Renomeando Pastas}
 		
 		\begin{itemize}
-			\item Selecionar a pasta, acessar o {\bf Menu Arquivo}(atalho {\bf Alt + A} - você aperta a tecla {\bf Alt} do teclado e enquanto ela está acionada, aperta a letra {\bf A}, soltando ambas ao mesmo tempo)>{\bf Renomear} (atalho F2) e digitar o novo nome.
+			\item Selecionar a pasta, acessar o {\bf Menu Arquivo}(atalho {\bf Alt + A} - você aperta a tecla {\bf Alt} do teclado e enquanto ela está acionada, aperta a letra {\bf A}, soltando ambas ao mesmo tempo) $\rightarrow$ {\bf Renomear} (atalho F2) e digitar o novo nome.
 		\end{itemize}
 		
 		\subsection{Apagando pastas e/ou arquivos}
@@ -777,7 +783,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 		
 		\begin{figure}[!h]
 			\centering
-			\includegraphics[scale=0.5]{Figures/office5}
+			\includegraphics[scale=0.47]{Figures/office5}
 			\label{fig:office5}
 			\caption{Criando um novo documento}
 		\end{figure}
@@ -1037,18 +1043,18 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 			
 			\begin{figure}[!htbp]
 				\centering
-				\begin{minipage}[b]{0.4\textwidth}
+				\begin{minipage}[b]{0.35\textwidth}
 					\includegraphics[width=\textwidth]{Figures/office11}
 					\caption{Brilho}
 				\end{minipage}
 				\hfill
-				\begin{minipage}[b]{0.4\textwidth}
+				\begin{minipage}[b]{0.35\textwidth}
 					\includegraphics[width=\textwidth]{Figures/office12}
 					\caption{Contraste}
 				\end{minipage}
 			\end{figure}
 			
-			\item Para finalizar, siga o mesmo procedimento anterior (\textbf{Clicar na Figura $>$ Ferramentas de Imagens $>$ Quebra automática de texto $>$ Atrás do Texto}) e depois clique em cortar.
+			\item Para finalizar, siga o mesmo procedimento anterior (\textbf{Clicar na Figura  $\rightarrow$ Ferramentas de Imagens $\rightarrow$ Quebra automática de texto $\rightarrow$  Atrás do Texto}) e depois clique em cortar.
 			
 			\newpage
 			
@@ -1223,7 +1229,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 			\item Clique em criar uma conta (na parte superior do site):
 			\begin{figure}[!h]
 				\centering
-				\includegraphics[scale=0.4]{Figures/gmail1}
+				\includegraphics[scale=0.35]{Figures/gmail1}
 				\label{fig:gmail1}
 				\caption{Criando Conta}
 			\end{figure}
@@ -1248,7 +1254,7 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 		
 		\begin{figure}[!h]
 			\centering
-			\includegraphics[scale=0.3]{Figures/gmail2}
+			\includegraphics[scale=0.27]{Figures/gmail2}
 			\label{fig:gmail2}
 			\caption{Gmail}
 		\end{figure}
@@ -1327,12 +1333,78 @@ No meio computacional, uma área de trabalho consiste de um ambiente gráfico ad
 			
 			\begin{figure}[!h]
 				\centering
-				\includegraphics[scale=0.3]{Figures/gmail7}
+				\includegraphics[scale=0.35]{Figures/gmail7}
 				\label{fig:gmail7}
 				\caption{Sair do Gmail}
 			\end{figure}
 			
 		\end{enumerate}
+	
+	\section{Facebook} 
+	O Facebook é uma rede social criada por Mark Zuckerberg. Atualmente, 45\% da população brasileira acessa o Facebook(dados de 2014). Se você quiser saber um pouco mais sobre a história de Zuckerberg, assista o filme A Rede Social. 
+	A seguir, informaremos como utilizar essa ferramenta mas tenha em mente que somente com prática é que você irá memorizar os conceitos expostos. Qualquer dúvida, o Google sempre é nosso amigo !
+	
+	\subsection{Criando uma conta no Facebook}
+		\begin{enumerate}
+			\item Para criar uma conta no Facebook basta preencher os dados da página inicial. Você pode acessar o Facebook clicando aqui: \url{www.facebook.com.br} 
+			
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.2]{Figures/fb1}
+				\label{fig:paginafb}
+				\caption{Página Inicial}
+			\end{figure}
+			
+			\item Se você preferir, pode preencher o seu email no campo em branco para que o Facebook procure pessoas que você conhece (contatos do seu e-mail);
+			
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.2]{Figures/fb2}
+				\label{fig:paginaf2}
+				\caption{Etapa 1}
+			\end{figure}
+			
+			\item Após isso, uma página semelhante a essa irá aparecer e o Facebook irá te notificar para a confirmação do e-mail vinculado à nova conta feita. Recomendamos que você vá até seu e-mail e o confirme, mas você pode fazer isso depois.  
+			Separamos alguns campos importantes para detalharmos a você.
+			
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[scale=0.3]{Figures/fb3}
+				\label{fig:paginaf3}
+			\end{figure}
+			
+		\end{enumerate}
+		
+		\begin{enumerate}
+			\item \textbf{No que você está pensando ?}: Nesse campo você pode publicar qualquer coisa para seus amigos verem, inclusive fotos. No botão \textbf{Amigos}, pode-se selecionar quem vê o que é publicado.
+			\item \textbf{Feed de Notícias}: por enquanto, você não tem nenhum amigo e, por isso, não pode ver a publicação de ninguém. O feed de notícias contém informações sobre as publicações de seus amigos e páginas que você escolher seguir.
+			\item \textbf{Solicitações de amizade}: Sempre que alguém quiser ser seu amigo, um convite será enviado até você para ser aprovado(os dois tornam-se amigos) ou não (os dois não se tornam amigos).
+			\item \textbf{Bate-papo (Inbox) }: Se você desejar conversar com seu amigo de forma tal que apenas ele e você vejam as mensagens, então deve-se ir ao campo Bate-papo.
+			\item \textbf{Notificações}: Esse campo te mostra notificações com relação a sua conta. Ex.: alguém que curtiu sua foto ou comentou em sua publicação.
+		\end{enumerate}
+		
+		\subsection{Curtir, Comentar, Compartilhar}
+		
+			Pode-se fazer essas tres coisas em um post do facebook se:
+		
+		\begin{enumerate}
+			\item  \icon{Figures/curtir} : você gostou de algo
+			\item  \icon{Figures/comentar} : você quer opinar em algum post
+			\item  \icon{Figures/compartilhar} : você quer que a publicação seja vista por seus amigos
+		\end{enumerate}
+		
+		\subsection{Configurações}
+		
+		É importante ressaltar que toda a conta do Facebook tem as suas configurações. Você pode acessá-las na seta do lado desse cadeado \icon{Figures/fb5}.
+		As configurações são importantes pois, por meio delas,  você pode definir quais informações conceder a certos sites(quando você entra em uma conta de um site pelo facebook), quem visualiza seus posts, quem você pode bloquear e muitos outros recursos.
+		
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[scale=0.3]{Figures/fb4}
+			\label{fig:config}
+			\caption{Configurações do Facebook}
+		\end{figure}
+		
 	
 	\section{Segurança na internet}
 	
