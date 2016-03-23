@@ -3,4 +3,4 @@
 Apostila atualizada pelo Comppet-UFU utilizando o material fornecido pelo PETMEC-UFU
 
 # Edição
-Ubuntu : sudo apt-get isntall texlive-full
+Ubuntu : sudo apt-get install texlive-full
